@@ -74,6 +74,12 @@ p { margin: 0 0 12px; color: var(--text); }
   gap: 12px;
 }
 
+.cv-btn {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  margin-right: 8px;
+}
+
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -101,6 +107,11 @@ p { margin: 0 0 12px; color: var(--text); }
   .nav-links { display: none; position: absolute; right: 20px; top: 56px; background: var(--card); padding: 12px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
   .nav-links.open { display: block; }
   .theme-toggle { width: 32px; height: 32px; font-size: 1rem; }
+  .cv-btn { 
+    font-size: 0.8rem; 
+    padding: 6px 10px; 
+    margin-right: 6px; 
+  }
 }
 
 .hero { padding: 48px 0 24px; }
