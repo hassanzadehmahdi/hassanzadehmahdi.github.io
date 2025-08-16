@@ -112,9 +112,35 @@ p { margin: 0 0 12px; color: var(--text); }
     padding: 6px 10px; 
     margin-right: 6px; 
   }
+  
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  
+  .hero-action {
+    order: -1;
+  }
 }
 
 .hero { padding: 48px 0 24px; }
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-action {
+  flex-shrink: 0;
+}
+
 .tagline { color: var(--muted); margin-top: -4px; }
 .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
 .btn {
