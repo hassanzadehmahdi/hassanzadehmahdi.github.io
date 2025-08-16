@@ -131,4 +131,68 @@ p { margin: 0 0 12px; color: var(--text); }
 .meta { color: var(--muted); font-size: .95rem; }
 
 .bullets { margin: 0; padding-left: 18px; }
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--card);
+  border: 1px solid color-mix(in srgb, var(--text), transparent 85%);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,.15);
+  border-color: var(--accent);
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.contact-link.email:hover {
+  background: linear-gradient(135deg, #ea4335, #d93025);
+  color: white;
+  border-color: #ea4335;
+}
+
+.contact-link.github:hover {
+  background: linear-gradient(135deg, #333, #24292e);
+  color: white;
+  border-color: #333;
+}
+
+.contact-link.linkedin:hover {
+  background: linear-gradient(135deg, #0077b5, #005885);
+  color: white;
+  border-color: #0077b5;
+}
+
+@media (max-width: 720px) {
+  .contact-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .contact-link {
+    justify-content: center;
+    padding: 14px 16px;
+  }
+}
+
 .site-footer { padding: 24px 0 48px; color: var(--muted); }
