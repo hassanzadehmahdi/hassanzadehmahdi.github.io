@@ -1,143 +1,107 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mahdi Hassanzadeh — Bioinformatics & AI Software Developer</title>
-  <meta name="description" content="Mahdi Hassanzadeh — Bioinformatics M.Sc. student at Sharif University of Technology; AI software developer. Projects, experience, and contact.">
-  <link rel="preload" href="styles.css" as="style">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#top">Mahdi Hassanzadeh</a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+---
+layout: default
+title: Home
+---
 
-  <main id="top">
-    <section class="hero container">
-      <h1>Mahdi Hassanzadeh</h1>
-      <p class="tagline">Bioinformatics · AI Software Developer</p>
-      <div class="cta">
-        <a class="btn primary" href="assets/mahdi-hassanzadeh-resume.pdf" target="_blank" rel="noopener">Download CV</a>
-        <a class="btn" href="mailto:hassanzadehmahdi01@gmail.com">Email</a>
-        <a class="btn" href="https://github.com/hassanzadehmahdi" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/hassanzadehmahdi" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </section>
+<section class="hero container">
+  <h1>{{ site.title }}</h1>
+  <p class="tagline">Bioinformatics · AI Software Developer</p>
+  <div class="cta">
+    <a class="btn primary" href="{{ '/assets/mahdi-hassanzadeh-resume.pdf' | relative_url }}" target="_blank" rel="noopener">Download CV</a>
+    <a class="btn" href="mailto:{{ site.email }}">Email</a>
+    <a class="btn" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
 
-    <section id="about" class="container section">
-      <h2>About</h2>
-      <p>
-        I'm an M.Sc. student in Bioinformatics at Sharif University of Technology. My work sits at the intersection of
-        machine learning and computational biology, with recent research on protein–biomolecule interactions using language
-        models and protein sequences. I also build practical AI software and lead small teams.
-      </p>
-    </section>
+<section id="about" class="container section">
+  <h2>About</h2>
+  <p>
+    I'm an M.Sc. student in Bioinformatics at Sharif University of Technology. My work sits at the intersection of
+    machine learning and computational biology, with recent research on protein–biomolecule interactions using language
+    models and protein sequences. I also build practical AI software and lead small teams.
+  </p>
+</section>
 
-    <section id="experience" class="container section">
-      <h2>Experience</h2>
-      <article class="card">
-        <header>
-          <h3>Team Lead &amp; AI Software Developer — DV+</h3>
-          <div class="meta">May 2025 – Present · Tehran, Iran</div>
-        </header>
-        <ul>
-          <li>Founded DV+ after placing 3rd at the 2025 Kenar Divar Hackathon; leading a 5‑person team to turn the prototype into a product.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <header>
-          <h3>AI Researcher — Mehr Pars</h3>
-          <div class="meta">Nov 2024 – Dec 2024 · Tehran, Iran</div>
-        </header>
-        <ul>
-          <li>Designed a chatbot system inspired by memgpt with multiple self-updating knowledge bases.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <header>
-          <h3>AI Software Developer — G2 Tech</h3>
-          <div class="meta">Sep 2023 – Jun 2024 · Tabriz, Iran</div>
-        </header>
-        <ul>
-          <li>Built a CV–PhD position matcher to recommend the most suitable academic openings.</li>
-        </ul>
-      </article>
-    </section>
+<section id="experience" class="container section">
+  <h2>Experience</h2>
+  <article class="card">
+    <header>
+      <h3>Team Lead &amp; AI Software Developer — DV+</h3>
+      <div class="meta">May 2025 – Present · Tehran, Iran</div>
+    </header>
+    <ul>
+      <li>Founded DV+ after placing 3rd at the 2025 Kenar Divar Hackathon; leading a 5‑person team to turn the prototype into a product.</li>
+    </ul>
+  </article>
+  <article class="card">
+    <header>
+      <h3>AI Researcher — Mehr Pars</h3>
+      <div class="meta">Nov 2024 – Dec 2024 · Tehran, Iran</div>
+    </header>
+    <ul>
+      <li>Designed a chatbot system inspired by memgpt with multiple self-updating knowledge bases.</li>
+    </ul>
+  </article>
+  <article class="card">
+    <header>
+      <h3>AI Software Developer — G2 Tech</h3>
+      <div class="meta">Sep 2023 – Jun 2024 · Tabriz, Iran</div>
+    </header>
+    <ul>
+      <li>Built a CV–PhD position matcher to recommend the most suitable academic openings.</li>
+    </ul>
+  </article>
+</section>
 
-    <section id="education" class="container section">
-      <h2>Education</h2>
-      <div class="grid two">
-        <div class="edu">
-          <h3>M.Sc. Bioinformatics</h3>
-          <div class="meta">Sharif University of Technology · Sep 2023 – Present</div>
-          <p>Thesis: Investigating protein interactions with biomolecules using language models and protein sequences.</p>
-          <p>GPA: 18.70 / 20</p>
-        </div>
-        <div class="edu">
-          <h3>B.Sc. Computer Engineering</h3>
-          <div class="meta">University of Tabriz · Sep 2018 – Jul 2022</div>
-          <p>Thesis: Sarcasm detection in Persian social media.</p>
-          <p>GPA: 17.20 / 20</p>
-        </div>
-      </div>
-    </section>
+<section id="education" class="container section">
+  <h2>Education</h2>
+  <div class="grid two">
+    <div class="edu">
+      <h3>M.Sc. Bioinformatics</h3>
+      <div class="meta">Sharif University of Technology · Sep 2023 – Present</div>
+      <p>Thesis: Investigating protein interactions with biomolecules using language models and protein sequences.</p>
+      <p>GPA: 18.70 / 20</p>
+    </div>
+    <div class="edu">
+      <h3>B.Sc. Computer Engineering</h3>
+      <div class="meta">University of Tabriz · Sep 2018 – Jul 2022</div>
+      <p>Thesis: Sarcasm detection in Persian social media.</p>
+      <p>GPA: 17.20 / 20</p>
+    </div>
+  </div>
+</section>
 
-    <section id="awards" class="container section">
-      <h2>Honors &amp; Awards</h2>
+<section id="awards" class="container section">
+  <h2>Honors &amp; Awards</h2>
+  <ul class="bullets">
+    <li>3rd Place — Kenar Divar Hackathon (University of Tehran), 2025</li>
+    <li>1st Place — Kenar Divar Hackathon (Sharif University of Technology), 2024</li>
+    <li>15th Place — AI Challenge Final (Sharif University of Technology), 2022</li>
+  </ul>
+</section>
+
+<section id="skills" class="container section">
+  <h2>Skills</h2>
+  <div class="grid two">
+    <div>
+      <h3>Theoretical</h3>
       <ul class="bullets">
-        <li>3rd Place — Kenar Divar Hackathon (University of Tehran), 2025</li>
-        <li>1st Place — Kenar Divar Hackathon (Sharif University of Technology), 2024</li>
-        <li>15th Place — AI Challenge Final (Sharif University of Technology), 2022</li>
+        <li>Machine Learning, Deep Learning, Classical AI Algorithms, Data Structures</li>
       </ul>
-    </section>
+    </div>
+    <div>
+      <h3>Programming</h3>
+      <ul class="bullets">
+        <li>Python, PyTorch, TensorFlow, Keras, NumPy, Scikit-learn, Pandas, BeautifulSoup, Hazm, Selenium</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <section id="skills" class="container section">
-      <h2>Skills</h2>
-      <div class="grid two">
-        <div>
-          <h3>Theoretical</h3>
-          <ul class="bullets">
-            <li>Machine Learning, Deep Learning, Classical AI Algorithms, Data Structures</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Programming</h3>
-          <ul class="bullets">
-            <li>Python, PyTorch, TensorFlow, Keras, NumPy, Scikit-learn, Pandas, BeautifulSoup, Hazm, Selenium</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> <a href="mailto:hassanzadehmahdi01@gmail.com">hassanzadehmahdi01@gmail.com</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/hassanzadehmahdi" target="_blank" rel="noopener">github.com/hassanzadehmahdi</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hassanzadehmahdi" target="_blank" rel="noopener">linkedin.com/in/hassanzadehmahdi</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer container">
-    <small>© <span id="year">2025</span> Mahdi Hassanzadeh · Last updated: August 16, 2025</small>
-  </footer>
-
-  <script>
-  // Basic mobile nav toggle
-  const toggle = document.querySelector('.nav-toggle');
-  const links = document.querySelector('.nav-links');
-  toggle?.addEventListener('click', () => links.classList.toggle('open'));
-  </script>
-</body>
-</html>
+<section id="contact" class="container section">
+  <h2>Contact</h2>
+  <p><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">github.com/{{ site.github_username }}</a></p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">linkedin.com/in/{{ site.linkedin_username }}</a></p>
+</section>

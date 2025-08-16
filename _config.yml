@@ -1,0 +1,50 @@
+# Site settings
+title: Mahdi Hassanzadeh
+email: hassanzadehmahdi01@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Bioinformatics M.Sc. student at Sharif University of Technology; 
+  AI software developer. Projects, experience, and contact.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ""
+github_username: "hassanzadehmahdi"
+linkedin_username: "hassanzadehmahdi"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Sass
+sass:
+  style: compressed 
